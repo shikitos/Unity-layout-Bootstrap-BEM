@@ -68,21 +68,126 @@ body {
   font-family: AbrahamLincoln;
 }
 
+.nav {
+  margin-bottom: 300px;
+}
+
+.nav__logo {
+  margin: 140px 0 65px 0;
+}
+
+.nav__list li {
+  margin-right: 50px;
+  list-style: none;
+}
+
+.nav__list a {
+  color: #fff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+}
+
+.phone {
+  position: absolute;
+  top: 0;
+  right: 2.5%;
+}
+
+.header {
+  position: relative;
+}
+
 .header-bg {
   background: #181818 url(../img/header-bg.jpg) no-repeat center center/cover;
 }
 
 .header__title {
   color: #ffa800;
-  font-size: 8.3em;
+  font-size: 7.5em;
   text-transform: uppercase;
 }
 
 .header__paragraph {
   color: #fff;
-  font-size: 3.3em;
+  font-size: 2.5em;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   line-height: 50px;
+  inline-size: 80%;
+  display: inline-block;
+}
+
+.header__links {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  display: inline-block;
+  width: 1.3em;
+  line-height: 1.3em;
+}
+
+.header__links__ul {
+  -webkit-transform: translate(0, 100%) rotate(-90deg);
+          transform: translate(0, 100%) rotate(-90deg);
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  white-space: nowrap;
+}
+
+.header__links__ul::after {
+  content: '';
+  float: left;
+  margin-top: 100%;
+}
+
+.header__links__ul a {
+  margin-right: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3em;
+  letter-spacing: 0.25em;
+}
+
+.header__scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 350px;
+}
+
+.header__scroll__imgarrow {
+  margin: auto;
+}
+
+.header__scroll img {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.header__copyright {
+  -webkit-transform: translate(0, 100%) rotate(-90deg);
+          transform: translate(0, 100%) rotate(-90deg);
+  margin: 0;
+  position: absolute;
+  bottom: 30%;
+  right: -4%;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3em;
+  letter-spacing: 0.25em;
+}
+
+.header > .container > .row {
+  margin-bottom: 220px;
 }
 /*# sourceMappingURL=style.css.map */
